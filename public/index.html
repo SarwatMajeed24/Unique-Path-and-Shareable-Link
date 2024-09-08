@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-container">
+        <header class="resume-header">
+            <div class="profile-img-container">
+                <img id="profile-img" src="sarwat.jpg" alt="Profile picture" class="profile-img">
+                <input type="file" id="profile-pic-upload" name="profile-pic-upload" accept="image/*" class="profile-pic-upload">
+            </div>
+            <div>
+                <h1>Sarwat Majeed</h1>   
+                <p>Frontend Developer</p>             
+            </div>
+            <div>
+                <h4>Email Id:</h4>  
+                <p>sarwatmajeed2015@gmail.com</p>              
+                <h4>Contact #:</h4>  
+                <p>03233331012</p>              
+            </div>            
+        </header>
+        <div class="resume-content">
+            <aside class="resume-sidebar">
+                <h2>Skills</h2>
+                <button id="toggle-skills-btn" class="toggle-btn">Show Skills</button>
+                <section id="skills" class="resume-section">
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                    </ul>
+                </section>
+            </aside>
+            <section class="resume-main">
+                <h2>Education</h2>
+                <button id="toggle-education-btn" class="toggle-btn">Show Education</button>
+                <section id="education" class="resume-section">
+                    <ul>
+                        <li>Matriculation</li>
+                        <p>Ali Ali School</p>
+                        <p>General Group</p>
+                        <p>A grade</p>    
+                        <li>Intermediate</li>
+                        <p>Rana Liaquat Ali Khan Government College of Home Economics</p>
+                        <p>Science Group</p>
+                        <p>1st division</p>   
+                        <li>Graduation</li>
+                        <p>Rana Liaquat Ali Khan Government College of Home Economics</p>
+                        <p>Science Group</p>
+                        <p>1st division</p> 
+                        <li>Post Graduation</li>
+                        <p>Karachi University</p>
+                        <p>Islamic</p>
+                        <p>1st division</p>          
+                    </ul>
+                </section>
+                <h2>Work Experience</h2>
+                <button id="toggle-work-experience-btn" class="toggle-btn">Show Work Experience</button>
+                <section id="work-experience" class="resume-section">
+                    <ul>
+                        <li>The Anchorage School</li>
+                        <p>Mathematics Subject Coordinator</p>
+                        <p>2022-2004</p>    
+                        <li>Falconhouse Grammar School</li>
+                        <p>Mathematics Subject Incharge</p>
+                        <p>2021-2022</p>   
+                        <li>KeyStone Academy</li>
+                        <p>Mathematics Teacher</p>
+                        <p>2017-2020</p>
+                        <li>AIMS</li>
+                        <p>Academic Coordinator</p>
+                        <p>2014-2017</p>
+                        <li>Milestone School</li>
+                        <p>Academic Coordinator</p>
+                        <p>2006-2014</p>                                
+                    </ul> 
+                </section>
+            </section>
+        </div>
+        <div class="share-section">
+            <input type="text" id="username" placeholder="Enter your username">
+            <button id="generate-link-btn" class="generate-link-btn">Generate Shareable Link</button>
+            <button id="download-pdf-btn" class="generate-link-btn">Download as PDF</button>
+            <p id="shareable-link" class="shareable-link"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.6.0/jspdf.umd.min.js"></script>
+</body>
+</html>
